@@ -6,14 +6,7 @@ import Features from "./components/features";
 import Footer from "./components/footer";
 
 export default function Home() {
-  const Props = {
-    stats: [
-      { number: "500+", label: "Active Players" },
-      { number: "15+", label: "Pro Coaches" },
-      { number: "25+", label: "Years Experience" },
-      { number: "100%", label: "Dedication" }
-    ]
-  }
+
   const featuresProps = {
     title: 'Why Choose Our Academy',
     subtitle: 'We provide comprehensive training programs designed to develop every aspect of your game',
@@ -59,13 +52,9 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
-      <Hero {...Props}/>
+      <Hero/>
+      <Stats/>
       <Features {...featuresProps}/>
-      {/* <div>
-       <Stats {...Props}/>
-      </div> */}
-      <Footer/>
     </div>
     
   );
